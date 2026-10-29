@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSA - Techniek College Rotterdam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+
+            <li>
+                <a href="over-mij.html">Over mij</a>
+                <ul>
+                    <li><a href="bsa.html">BSA</a></li>
+                    <li><a href="studiemateriaal.html">Studiemateriaal</a></li>
+                    <li><a href="examenplan.html">Examenplan</a></li>
+                </ul>
+            </li>
+
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Bindend Studieadvies (BSA)</h1>
+        <p>Het Bindend Studieadvies (BSA) geeft aan of je voldoende studievoortgang hebt gemaakt tijdens je opleiding. Op deze pagina vind je informatie over de criteria en kun je jouw eigen voortgang registreren via het formulier hieronder.</p>
+
+        <h2>Wat is het BSA?</h2>
+        <p>Het BSA is een advies dat je ontvangt aan het einde van het studiejaar. Dit advies is gebaseerd op jouw resultaten, aanwezigheid en inzet. Een positief BSA betekent dat je door kunt naar het volgende studiejaar. Een negatief BSA betekent dat je moet stoppen met de opleiding.</p>
+
+        <h2>Criteria voor het BSA</h2>
+        <ul>
+            <li>Minimaal 50% van de studiepunten behaald</li>
+            <li>Actieve deelname aan lessen en projecten</li>
+            <li>Voldoende inzet en motivatie getoond</li>
+        </ul>
+
+        <h2>Voortgang Registreren</h2>  
+        <p>Registreer hier je voortgang voor het BSA.</p>
+        <form action="bsa.html" method="post">
+            <label for="naam">Naam:</label>
+            <input type="text" id="naam" name="naam" required>
+
+            <label for="studentnummer">Studentnummer:</label>
+            <input type="text" id="studentnummer" name="studentnummer" required>
+
+            <label for="studiepunten">Aantal behaalde studiepunten:</label>
+            <input type="number" id="studiepunten" name="studiepunten" min="0" max="60" required>
+
+            <input type="submit" value="Verstuur">
+    </main>
+
+</body>
+</html>
